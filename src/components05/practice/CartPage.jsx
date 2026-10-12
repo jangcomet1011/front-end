@@ -65,7 +65,7 @@ const CartPage = () => {
                         )}
                     </tbody>
                 </table>
-            </div>
+            </div>/
             <div>
                 <h1>주문 목록</h1>
                 <h5>상품수:{state.order.count}개</h5>
