@@ -26,6 +26,7 @@ const RegisterPage = () => {
                     <button type='reset'>취소</button>
                 </div>
             </form>
+            <h1 style={{marginTop : '30px'}}>상품목록</h1>
         </div>
     )
 }

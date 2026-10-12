@@ -5,10 +5,17 @@ import React, { useState } from 'react'
 import '../Style03.css'
 
 const CounterPage = () => {
+    const [number, setNumber] = useState(0);
+
+    //마우스 오른쪽을 클릭한 경우
+    const onClickRight = (e) => {
+        e.preventDefault();
+        setNumber(number - 1);
+    }
     return (
         <div className='box'>
-            <input style={{width:'100px'}} type='number'/>
-            <button>증감</button>
+            <input onChange = {(e) => setNumber(e.target.value)}value={number} style={{ width: '100px' }} type='number' />
+            <button onClick={() => setNumber(number + 1)}>증감</button>
         </div>
     )
 }
